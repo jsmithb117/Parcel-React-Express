@@ -33,4 +33,16 @@ Added proxy line in package.json:
 Started server:
   node ./src/server/index.js
 
+  installed:
+    npm install --save-dev nodemon
+  got nodemon working properly
+Got time and 'data' properly rendered
 
+Ready for database...
+  installed:
+    npm install mongoose --save
+  started:
+    sudo service mongodb start
+  added to index.js:
+    mongoose.Promise = global.Promise;
+    mongoose.connect(`mongodb://localhost:27017/node-react-starter`, {useNewUrlParser: true, useUnifiedTopology: true});

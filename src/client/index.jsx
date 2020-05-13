@@ -12,8 +12,14 @@ class App extends React.Component {
 	}
 
   componentDidMount () {
-    this.tick()
+    this.tick();
+    fetch('http://localhost:8080/costPerDay')
+    .then((response) => response.json())
+    .then((data) => {
+      this.setState({data: data})
+      })
   }
+
 
   tick() {
     setInterval(() => {
@@ -26,7 +32,8 @@ class App extends React.Component {
 		return (
 			<div>
         <span>The time is: </span>
-        <Clock time={this.state.time} />
+        <Clock time={this.state.time} data={this.state.data} />
+        {/* <span className="data"> {this.props.data}</span> */}
 			</div>
 		);
 	}

@@ -4,14 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "parcel ./src/server/index.html",
+    "server": "npx nodemon ./src/server/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  },
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "mongoose": "^5.9.13",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
