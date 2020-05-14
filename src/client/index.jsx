@@ -33,7 +33,6 @@ class App extends React.Component {
 			<div>
         <span>The time is: </span>
         <Clock time={this.state.time} data={this.state.data} />
-        {/* <span className="data"> {this.props.data}</span> */}
 			</div>
 		);
 	}

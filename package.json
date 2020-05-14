@@ -19,7 +19,7 @@
     "express": "^4.17.1",
     "mongoose": "^5.9.13",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
-  "proxy": "http://localhost:8080"
+    "react-dom": "^16.13.1",
+    "react-scripts": "^3.4.1"
+  }
 }

@@ -46,3 +46,6 @@ Ready for database...
   added to index.js:
     mongoose.Promise = global.Promise;
     mongoose.connect(`mongodb://localhost:27017/node-react-starter`, {useNewUrlParser: true, useUnifiedTopology: true});
+Do I need react-scripts in order for 'proxy...' to work in package.json?
+  Installing latest version of react-scripts using:
+    npm install react-scripts@latest
